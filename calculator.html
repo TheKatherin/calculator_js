@@ -1,11 +1,33 @@
 <!<!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Calculator</title>
   </head>
   <body>
-    <h1>Rohan's Personal Calculator</h1>
-    <script src="js/scripts.js"></script>
+    <div class="container jumbotron">
+      <div id="calculator">
+        <h1>Rohan's Personal Calculator</h1>
+        <form class="" action="index.html" method="post">
+          <input id="number1" type="number" name="" value="">
+          <input id="number2" type="number" name="" value="">
+          <div class="btn-group container" role="group" aria-label="Basic example">
+            <button id="add" type="submit" class="btn btn-danger">+</button>
+            <button id="sub" type="submit" class="btn btn-primary">-</button>
+            <button id="mult" type="submit" class="btn btn-warning">*</button>
+            <button id="div" type="submit" class="btn btn-success">/</button>
+          </div>
+          <!-- <form class="container" action="index.html" method="post">
+            <input id="result" class="form-control" type="number" name="" value="">
+          </form> -->
+        </form>
+        <div>
+          <p id="output"></p>
+        </div>
+      </div>
+    </div>
   </body>
-
 </html>
